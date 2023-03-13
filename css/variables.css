@@ -1,0 +1,25 @@
+:root {
+	--main-color: #ffffff;
+	--bg-grey-color: #212121;
+	--form-text-color: #f2f2f2;
+	--a-link-color: #bdbdbd;
+	--main-bg-color: #1a191a;
+	--hover-color: #ee82ee;
+	--transition-btn: all 0.5s ease-out;
+}
+
+@keyframes show {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+@font-face {
+	font-family: 'AmericanCaptainRegular';
+	src: url('../font/American Captain.ttf') format('truetype');
+	font-style: normal;
+	font-weight: normal;
+}
