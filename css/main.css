@@ -1,0 +1,70 @@
+@import 'null.css';
+@import 'variables.css';
+@import 'common.css';
+@import '../css/popup/popup.css';
+@import '../css/header/header.css';
+@import '../css/burger/burger.css';
+@import '../css/about/about.css';
+@import '../css/benefits/benefits.css';
+@import '../css/cars/cars.css';
+@import '../css/review/review.css';
+@import '../css/contact/contact.css';
+@import '../css/footer/footer.css';
+@import 'media.css';
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: 'Source Sans Pro', sans-serif;
+	color: var(--main-color);
+	min-height: 100vh;
+	background-color: var(--main-bg-color);
+}
+
+.lock {
+	position: relative;
+	overflow: hidden;
+}
+._lock {
+	position: relative;
+	overflow: hidden;
+}
+
+.wrapper {
+	width: 100%;
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.container {
+	max-width: 1740px;
+	padding: 0 10px;
+	margin: 0 auto;
+	min-height: 100%;
+}
+
+header {
+	flex: 0 0 150px;
+	min-height: 100vh;
+	background-image: url('/images/header/bg-header.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+main {
+	flex: 1 0 auto;
+	overflow: hidden;
+}
+
+footer {
+	flex: 0 0 250px;
+}
+
+h1 {
+	font-family: 'AmericanCaptainRegular', serif;
+}

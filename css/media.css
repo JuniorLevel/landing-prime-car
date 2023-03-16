@@ -1,0 +1,176 @@
+@media screen and (max-width: 1325px) {
+	.header {
+		min-height: 1020px;
+	}
+	.about {
+		background-image: none;
+	}
+	.cars {
+		padding-top: 0;
+	}
+	.benefits {
+		background-image: none;
+	}
+	.benefits-inner {
+		flex-direction: column;
+		gap: 50px;
+	}
+	.review-content {
+		min-height: 500px;
+	}
+	.review::before,
+	.review::after {
+		display: none;
+	}
+	.contact {
+		background-image: none;
+	}
+}
+
+@media screen and (max-width: 1170px) {
+	.about-inner {
+		flex-direction: column;
+	}
+	.about-info {
+		flex: 0 1 auto;
+	}
+	.about__title {
+		margin-bottom: 65px;
+	}
+	.about-picture {
+		order: -1;
+	}
+	.about-info__text {
+		text-align: center;
+	}
+	.contact-top {
+		flex-direction: column;
+		gap: 50px;
+	}
+}
+
+@media screen and (max-width: 900px) {
+	.benefits-title {
+		font-size: 50px;
+	}
+	.review-top {
+		flex-direction: column;
+	}
+	br {
+		display: none;
+	}
+	.review-top__title {
+		font-size: 50px;
+		margin-bottom: 10px;
+	}
+	.review-top__text {
+		text-align: center;
+	}
+	.footer-top {
+		flex-wrap: wrap;
+	}
+	.footer-top__items {
+		text-align: center;
+		flex: 0 0 100%;
+		margin-bottom: 25px;
+	}
+	.footer-top__items:last-child {
+		margin-bottom: 0;
+	}
+	.footer-top__icons {
+		justify-content: center;
+		gap: 10px;
+	}
+	.footer-content {
+		text-align: center;
+	}
+	.footer-content__links a {
+		display: block;
+	}
+	.footer-content__links {
+		margin-bottom: 20px;
+	}
+}
+
+@media screen and (max-width: 780px) {
+	.header-top__nav,
+	.header-top__btn {
+		display: none;
+	}
+
+	.menu,
+	.menu-open-btn {
+		display: block;
+	}
+
+	.header-banner__title {
+		text-align: center;
+		font-size: 48px;
+		margin: 0 auto 75px;
+	}
+	.header-banner__text {
+		text-align: center;
+		font-size: 25px;
+	}
+	br {
+		display: none;
+	}
+	.header-banner__btn {
+		margin: 0 auto;
+	}
+	.benefits-title {
+		font-size: 46px;
+	}
+	.cars-title {
+		font-size: 46px;
+	}
+	.review-top__title {
+		font-size: 46px;
+	}
+	.review-top__text {
+		font-size: 24px;
+		text-align: center;
+	}
+	.review-content__link {
+		display: block;
+	}
+	#review-btn {
+		display: none;
+	}
+	.contact-info__title {
+		font-size: 46px;
+		margin-bottom: 10px;
+	}
+	.contact-info__text {
+		font-size: 24px;
+	}
+	.footer-content {
+		flex-direction: column;
+	}
+	.footer-content__links {
+		justify-content: center;
+	}
+}
+
+@media screen and (max-width: 460px) {
+	.menu__body {
+		width: 100%;
+	}
+	.header-banner__title {
+		text-align: center;
+		font-size: 46px;
+	}
+	.about__title {
+		font-size: 46px;
+	}
+	.benefits-item__img {
+		left: 0;
+		right: 0;
+		bottom: 0;
+		margin: 0 auto;
+	}
+	.review-top__text {
+		font-size: 24px;
+		text-align: start;
+	}
+}
