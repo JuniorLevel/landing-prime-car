@@ -1,0 +1,77 @@
+.cars {
+	padding-top: 100px;
+	&-title {
+		margin-bottom: 40px;
+	 }
+	&-text {
+		margin-bottom: 60px;
+		font-size: 20px;
+	}
+	&-inner {
+		display: flex;
+		flex-wrap: wrap;
+		overflow: hidden;
+		&__item {
+			position: relative;
+			flex: 1 1 570px;
+			min-height: 270px;
+			transform: scale(0.3);
+			transition: all 2s ease-in-out;
+			&.active {
+				transform: scale(1);
+			}
+		}
+		&__img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+	&-item {
+		&__preview {
+			display: flex;
+			justify-content: center;
+			flex-direction: column;
+			align-items: center;
+			gap: 15px;
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			background-color: rgba(23, 23, 23, 0.9);
+			opacity: 0;
+			&:hover {
+				opacity: 1;
+				transition: all 1s ease-out;
+			}
+		}
+	}
+	&-preview__title {
+		font-weight: 700;
+		font-size: 32px;
+		line-height: 38px;
+	}
+	&__description {
+		font-weight: 500;
+		font-size: 20px;
+		line-height: 24px;
+		text-align: center;
+	}
+}
+
+@media screen and (max-width: 1325px) {
+	.cars {
+		padding-top: 0;
+	}
+}
+
+@media screen and (max-width: 780px) {
+	.cars {
+		&-title {
+			font-size: 46px;
+		}
+	}
+}
+
+

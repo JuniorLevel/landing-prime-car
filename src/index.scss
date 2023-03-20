@@ -1,17 +1,16 @@
-@import 'css/null.css';
-@import 'css/variables.css';
-@import 'css/common.css';
-@import 'css/fonts.css';
-@import 'css/popup/popup.css';
-@import 'css/header/header.css';
-@import 'css/burger/burger.css';
-@import 'css/about/about.css';
-@import 'css/benefits/benefits.css';
-@import 'css/cars/cars.css';
-@import 'css/review/review.css';
-@import 'css/contact/contact.css';
-@import 'css/footer/footer.css';
-@import 'css/media.css';
+@import 'css/null.scss';
+@import 'css/variables.scss';
+@import 'css/common.scss';
+@import 'css/fonts.scss';
+@import 'css/popup/popup.scss';
+@import 'css/header/header.scss';
+@import 'css/burger/burger.scss';
+@import 'css/about/about.scss';
+@import 'css/benefits/benefits.scss';
+@import 'css/cars/cars.scss';
+@import 'css/review/review.scss';
+@import 'css/contact/contact.scss';
+@import 'css/footer/footer.scss';
 
 html {
 	scroll-behavior: smooth;
@@ -19,9 +18,9 @@ html {
 
 body {
 	font-family: 'Source Sans Pro', sans-serif;
-	color: var(--main-color);
+	color: $main-color;
 	min-height: 100vh;
-	background-color: var(--main-bg-color);
+	background-color: $main-bg-color;
 }
 
 .lock {

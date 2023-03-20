@@ -1,0 +1,125 @@
+@import '/src/css/variables';
+
+.benefits {
+	min-height: 1100px;
+	background-color: $bg-grey-color;
+	background-image: url('/src/images/benefits/bg/Lines.svg'),
+		url('/src/images/benefits/bg/Lines2.svg');
+	background-repeat: no-repeat, no-repeat;
+	background-position: left top, right bottom;
+	text-align: center;
+	padding-top: 90px;
+	&-title {
+		margin-bottom: 40px;
+	}
+	&-text {
+		font-weight: 400;
+		font-size: 24px;
+		line-height: 29px;
+		margin-bottom: 105px;
+	}
+	&-inner {
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 114px;
+		&__item {
+			position: relative;
+			flex: 0 1 430px;
+			border-radius: 16px;
+			padding: 0 45px 35px 45px;
+			font-weight: 700;
+			font-size: 32px;
+			line-height: 38px;
+			&:first-child {
+				background: rgba(0, 221, 168, 0.5);
+			}
+			&:nth-child(2) {
+				background: rgba(207, 41, 41, 0.6);
+			}
+			&:last-child {
+				background: rgba(0, 88, 221, 0.6);
+			}
+			transition: all 2s ease-in-out;
+			transform: skewX(30deg);
+			&.active {
+				transform: skewX(0deg);
+
+			}
+		}
+	}
+	&-item {
+		&__img {
+			position: absolute;
+			top: -85px;
+			left: 85px;
+			transform: translateY(-200%);
+			transition: all 2s ease-in-out;
+			&.active {
+				transform: translateY(0);
+
+			}
+		}
+		&__title {
+			margin-top: 175px;
+			margin-bottom: 20px;
+		}
+		&__text {
+			font-weight: 500;
+			font-size: 24px;
+			line-height: 29px;
+		}
+		&__link {
+			display: inline-block;
+			font-weight: 500;
+			font-size: 24px;
+			line-height: 29px;
+			margin-top: 39px;
+			color: inherit;
+			&:hover {
+				text-decoration: underline;
+			}
+			&:active {
+				color: blue;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 1325px) {
+	.benefits {
+		background-image: none;
+		&-inner {
+			flex-direction: column;
+			gap: 50px;
+		}
+	}
+}
+
+@media screen and (max-width: 900px) {
+	.benefits {
+		&-title {
+			font-size: 50px;
+		}
+	}
+}
+
+@media screen and (max-width: 780px) {
+	.benefits {
+		&-title {
+			font-size: 46px;
+		}
+	}
+}
+
+@media screen and (max-width: 460px) {
+	.benefits {
+		&-item {
+			&__img {
+				left: 0;
+				right: 0;
+				bottom: 0;
+				margin: 0 auto;
+			}
+		}
+	}
+}

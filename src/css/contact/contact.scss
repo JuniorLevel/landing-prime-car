@@ -1,0 +1,108 @@
+.contact {
+	position: relative;
+	z-index: 100;
+	background-image: url(/src/images/contact/contact-bg.svg);
+	background-repeat: no-repeat;
+	background-position: top left;
+	&-map iframe {
+		width: 100%;
+		height: 377px;
+		border: 0;
+	 }
+	&-map {
+		opacity: 0;
+		transition: all 5s ease-in-out;
+		&.active {
+			opacity: 1;
+		}
+	}
+	&-top {
+		padding-top: 116px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin-bottom: 116px;
+		&__info {
+			flex: 0 1 40%;
+		}
+		&__form {
+			flex: 0 1 626px;
+		}
+	}
+	&-info {
+		&__title {
+			font-weight: 400;
+			font-size: 72px;
+		}
+		&__text {
+			font-weight: 400;
+			font-size: 30px;
+		}
+	}
+}
+
+.form {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 50px 20px;
+	margin-bottom: 1rem;
+	&-input {
+		&__message {
+			flex: 1 1 100% !important;
+		}
+		&__btn {
+			width: 158px;
+			height: 45px;
+			padding: 0;
+		}
+	}
+}
+
+.input,
+.select {
+	flex: 1 1 300px;
+	height: 32px;
+	background: transparent;
+	border: none;
+	color: #ffffff;
+	border-bottom: 1px solid #ffffff;
+}
+
+.select option {
+	color: #000000;
+}
+.input::placeholder {
+	color: #ffffff;
+}
+
+@media screen and (max-width: 1325px) {
+	.contact {
+		background-image: none;
+	}
+}
+
+@media screen and (max-width: 1170px) {
+	.contact {
+		&-top {
+			flex-direction: column;
+			gap: 50px;
+			&__form {
+				flex: 0 1 235px;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 780px) {
+	.contact {
+		&-info {
+			&__title {
+				font-size: 46px;
+				margin-bottom: 10px;
+			}
+			&__text {
+				font-size: 24px;
+			}
+		}
+	}
+}
