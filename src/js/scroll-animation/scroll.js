@@ -51,4 +51,7 @@ export default function scrollEvent() {
     observer.observe(footerItem);
   });
 }
-window.addEventListener("load", scrollEvent);
+
+window.addEventListener("load", () => {
+  scrollEvent();
+});

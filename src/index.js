@@ -1,6 +1,6 @@
 import "./index.html";
 import "./index.scss";
-import scrollEvent from "./js/scroll-animation/scroll";
-import burgerMenu from "./js/burger/burger";
-import goTop from "./js/goTop/goTop";
-import popup from "./js/popup/popup";
+import "./js/burger/burger";
+import "./js/goTop/goTop";
+import "./js/popup/popup";
+import "./js/scroll-animation/scroll";

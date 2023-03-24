@@ -1,7 +1,11 @@
-@import '/src/css/variables';
-@import '/src/css/animations';
+@import '/src/scss/variables';
+@import '/src/scss/animations';
 
 .menu {
+	&-open-img, &-close-img {
+		width: 52px;
+		height: 52px;
+	}
 	display: none;
 	&__body {
 		position: fixed;

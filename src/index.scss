@@ -1,16 +1,16 @@
-@import 'css/null.scss';
-@import 'css/variables.scss';
-@import 'css/common.scss';
-@import 'css/fonts.scss';
-@import 'css/popup/popup.scss';
-@import 'css/header/header.scss';
-@import 'css/burger/burger.scss';
-@import 'css/about/about.scss';
-@import 'css/benefits/benefits.scss';
-@import 'css/cars/cars.scss';
-@import 'css/review/review.scss';
-@import 'css/contact/contact.scss';
-@import 'css/footer/footer.scss';
+@import 'scss/null.scss';
+@import 'scss/variables.scss';
+@import 'scss/common.scss';
+@import 'scss/fonts.scss';
+@import 'scss/popup/popup.scss';
+@import 'scss/header/header.scss';
+@import 'scss/burger/burger.scss';
+@import 'scss/about/about.scss';
+@import 'scss/benefits/benefits.scss';
+@import 'scss/cars/cars.scss';
+@import 'scss/review/review.scss';
+@import 'scss/contact/contact.scss';
+@import 'scss/footer/footer.scss';
 
 html {
 	scroll-behavior: smooth;
@@ -50,7 +50,7 @@ body {
 header {
 	flex: 0 0 150px;
 	min-height: 100vh;
-	background-image: url('/src/images/header/bg-header.jpg');
+	background-image: url('/src/images/header/bg-header.webp');
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
