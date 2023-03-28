@@ -17,7 +17,7 @@
 	font-weight: 600;
 	font-size: 24px;
 	line-height: 29px;
-	padding: 12px 32px;
+	padding: 12px 20px;
 	&:hover {
 		background-color: rgba(0, 0, 0, 0.25);
 		transition: $transition-btn;
@@ -51,7 +51,7 @@
 	}
 }
 
-.animate-title{
+.animate-title {
 	&.title {
 		transform: translateX(-100%);
 		transition: all 1.5s ease-in-out;
@@ -72,6 +72,3 @@
 		opacity: 1;
 	}
 }
-
-
-

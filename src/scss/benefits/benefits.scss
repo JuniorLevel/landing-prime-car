@@ -43,7 +43,6 @@
 			transform: skewX(30deg);
 			&.active {
 				transform: skewX(0deg);
-
 			}
 		}
 	}
@@ -56,7 +55,6 @@
 			transition: all 2s ease-in-out;
 			&.active {
 				transform: translateY(0);
-
 			}
 		}
 		&__title {
@@ -65,13 +63,13 @@
 		}
 		&__text {
 			font-weight: 500;
-			font-size: 24px;
+			font-size: 20px;
 			line-height: 29px;
 		}
 		&__link {
 			display: inline-block;
 			font-weight: 500;
-			font-size: 24px;
+			font-size: 20px;
 			line-height: 29px;
 			margin-top: 39px;
 			color: inherit;
